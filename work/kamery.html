@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamerové systémy | Viktor Hajduk</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Viktor Hajduk</a>
+            <ul class="nav-menu">
+                <li class="nav-dropdown">
+                    <details class="dropdown">
+                        <summary class="nav-link nav-dropdown-toggle">Co dělám</summary>
+                        <ul class="dropdown-menu">
+                            <li><a href="kamery.html" class="dropdown-link">Kamerové systémy</a></li>
+                            <li><a href="stavbapc.html" class="dropdown-link">Stavba PC</a></li>
+                            <li><a href="site.html" class="dropdown-link">Sítě</a></li>
+                            <li><a href="3dtisk.html" class="dropdown-link">3D tisk</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="../gear.html" class="nav-link">Vybavení</a></li>
+                <li><a href="../contact.html" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Kamerové systémy</h1>
+                <p>Mojí oblibou je zapojování bezpečnostích kamer</p>
+                <p>S jejich instalací jsem začal na začátku roku 2026, kdy mě kamarád poprosil o to, abych mu poradil s výberem kamer podle požadavků </p>
+                <p>Za mě absolutní nutností bezpečnostní kamery je mít PoE (Power over Ethernet), které usnadňuje celé zapojení kamery, protože umí vést napájení a zároveň internetové připojení</p>
+                <p>Taktéž pro mě je nutností mít u kamery rozlišení alespoň Full HD pokud bude v méně náročnějších podmínkách, jinak doporučuji kamery alespoň QHD, kvůli ostrosti, která je znát hlavně ve tmě</p>
+                <p>Za mě další nutností je infračervený přísvit, který lidským okem nevidíme, ale na kameře je potom vidět hodně věcí i ve tmě.</p>
+                <p>Taktéž jsem rád, když kamera ma mikrofon, jelikož mi to umožní nahrávat i zvuk v daném místě, kde tam samotná kamera</p>
+                <p>Mužu zmínit další věci jako SD karta, reproduktor atd. ale tyto věci už nejsou pro mě důležité, ale jsou příjemným bonusem, když tam jsou</p>
+                <p>Na čem by hlavně měli výrobci kamer zapracovat je software, jsou výrobci co mají skvělý software, ale špatný hardware a naopak, a potom je těžké z toho nějak vybírat</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="currentYear"></span> Viktor Hajduk</p>
+    </footer>
+
+    <script>
+        const currentYear = document.getElementById('currentYear');
+        if (currentYear) {
+            currentYear.textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>
