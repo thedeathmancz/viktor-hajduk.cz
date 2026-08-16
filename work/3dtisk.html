@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D tisk | Viktor Hajduk</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Viktor Hajduk</a>
+            <ul class="nav-menu">
+                <li class="nav-dropdown">
+                    <details class="dropdown">
+                        <summary class="nav-link nav-dropdown-toggle">Co dělám</summary>
+                        <ul class="dropdown-menu">
+                            <li><a href="kamery.html" class="dropdown-link">Kamerové systémy</a></li>
+                            <li><a href="stavbapc.html" class="dropdown-link">Stavba PC</a></li>
+                            <li><a href="site.html" class="dropdown-link">Sítě</a></li>
+                            <li><a href="3dtisk.html" class="dropdown-link">3D tisk</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="../gear.html" class="nav-link">Vybavení</a></li>
+                <li><a href="../contact.html" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>3D tisk</h1>
+                <p>Zaměřuji se také na 3D tisk, ať už jde o jednoduchý díl, nebo něco složitějšího</p>
+                <p>Zaměřuji se spíše na takové modely, které budou v ideálních podmínkách, kvůli materiálu (PLA)</p>
+                <p>Jsem stále začátečník v 3D Tisku, a proto jsem si jako začátečník koupil 3D tiskárnu Creality Ender 3, která umí zatrápit i zkušené tiskaře, kteří touto tiskárnou neprošli</p>
+                <p>Kupoval jsem ji tehdy z bazoše asi za 2 000 Kč, trápení přišlo hned potom co jsem ji koupil a zjistil, že ji neumím ani zkalibrovat</p>
+                <p>Proto jsem strávil dva dny, abych zjistil vše základní, co potřebuji, protože jsem před nastudováním znal jen, že musím použít na tiskárnu slicer. A to že model je soubor s příponou .stl a pro tiskárnu je .gcode.</p>
+                <p>Po asi 2 mesících mě přestala bavit ruční kalibrace podložky pomocí koleček, koupil jsem si CR-Touch, který má za úkol zjistit nerovnosti a následně je při tisku vyrovnat pomocí změny pozice Z-Osy (tedy výšku extruderu)</p>
+                <p>Pokud budete chít něco vytisknout, mužete jít na moje aukro na tuto nabídku: (postupujte podle pokynů na nabídce)</p>
+                <p>Do budoucna plánuji si koupit lepší model (BambuLab, Creality, Prusa), ale zatím jedu na tom, co mám</p>
+                <p>Na fotografiích můžete vidět, co vše jsem už dělal (nejen pro sebe)</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="currentYear"></span> Viktor Hajduk</p>
+    </footer>
+
+    <script>
+        const currentYear = document.getElementById('currentYear');
+        if (currentYear) {
+            currentYear.textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>

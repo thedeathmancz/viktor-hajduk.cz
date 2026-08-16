@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sítě | Viktor Hajduk</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Viktor Hajduk</a>
+            <ul class="nav-menu">
+                <li class="nav-dropdown">
+                    <details class="dropdown">
+                        <summary class="nav-link nav-dropdown-toggle">Co dělám</summary>
+                        <ul class="dropdown-menu">
+                            <li><a href="kamery.html" class="dropdown-link">Kamerové systémy</a></li>
+                            <li><a href="stavbapc.html" class="dropdown-link">Stavba PC</a></li>
+                            <li><a href="site.html" class="dropdown-link">Sítě</a></li>
+                            <li><a href="3dtisk.html" class="dropdown-link">3D tisk</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="../gear.html" class="nav-link">Vybavení</a></li>
+                <li><a href="../contact.html" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Sítě</h1>
+                <p>Rád se věnuji sítím a jejich zapojení</p>
+                <p>Tuto věc dělám zatím jen pro zábavu, a to z toho důvodu, že potřebuji se naučit všechny oblasti, které jsou pro tuto profesi potřeba, ovšem první zapojené internetu a místní stíě mi dala zkušenost z roku 2024</p>
+                <p>V roce 2024 mě kamarád kontaktoval s tím že mají zrychlení internet a že potřebuje zjistit, proč má internet, po následném zkoumání padla vina na extremné starý router, který bylo potřeba vyměnit.</p>
+                <p>Začal návrh, který se déle táhnul, ovšem bylo stanoveno, že v technické místnosti bude jeden DSL router jako přívod do baráku a brána pro vstup do internetu, následně přísla teorie místní sítě, jelikož šlo o bytovou jednotku, tak bylo potřeba zapojit všechny byty, aby vše fungovalo, jak má.</p>
+                <p>Pro zapojení všech bytů byl použitý 16ti portový switch, který byl na rychlost 1 Gb/s (125 MB/s), aby se mohla využít rychlost internetu 250 Mbit/s (30 MB/s), stále ovšem není zapojena Wi-Fi, a na tu přišla až řada poslední, experti radí dát Wi-Fi na nejvyšší bod, chtěl jsem si ověřit, zda trik je pravdivý, a ukázalo se že je funkční</p>
+                <p>Pro Wi-Fi jsem mohl zvolit již zmíněný DSL router, ovšem ten byl na starší Wi-Fi 5, ale jsem využít něco modernějšího a proto padlo rozhodnutí na Wi-Fi 6, což se ukázalo jako výborný nápad, a to kvůli vysokému počtu zařízení, které to nyní vzládá</p>
+                <p>I když toto není uplně nic světoborného, musím říct, že nějaké základy mi to dalo, a že je nejlepší si rozložení někde psát, aby jste to pak co nejvíc dodrženi, lituji, že jsem zde nepoužil rack a do něho switch, ovšem kvůli prostoru ze tam ani dát nemohl</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="currentYear"></span> Viktor Hajduk</p>
+    </footer>
+
+    <script>
+        const currentYear = document.getElementById('currentYear');
+        if (currentYear) {
+            currentYear.textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>

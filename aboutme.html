@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viktor Hajduk</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <!-- Horní lišta s navigací -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Viktor Hajduk</a>
+            <ul class="nav-menu">
+                <li class="nav-dropdown">
+                    <details class="dropdown">
+                        <summary class="nav-link nav-dropdown-toggle">Co dělám</summary>
+                        <ul class="dropdown-menu">
+                            <li><a href="work/kamery.html" class="dropdown-link">Kamerové systémy</a></li>
+                            <li><a href="work/stavbapc.html" class="dropdown-link">Stavba PC</a></li>
+                            <li><a href="work/site.html" class="dropdown-link">Sítě</a></li>
+                            <li><a href="work/3dtisk.html" class="dropdown-link">3D tisk</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="gear.html" class="nav-link">Vybavení</a></li>
+                <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hlavní obsah -->
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>O mně</h1>
+                
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="pictures/aboutme.jpg" alt="Tvůj obrázek">
+                    </div>
+                    <div class="about-text">
+                        <h2>Kdo jsem?</h2>
+                        <p>Jsem student, který se zajímá o programování a webový vývoj. Rád se učím nové věci a tvořím zajímavé projekty.</p>
+                        
+                        <h2>Mé zájmy</h2>
+                        <ul>
+                            <li>Programování (Python, JavaScript, HTML/CSS)</li>
+                            <li>Webový design a vývoj</li>
+                            <li>Tvorba her a interaktivních aplikací</li>
+                            <li>Grafika a design</li>
+                        </ul>
+                    </div>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© <span id="currentYear"></span> Viktor Hajduk</p>
+    </footer>
+
+    <script>
+        const currentYear = document.getElementById('currentYear');
+        if (currentYear) {
+            currentYear.textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>
