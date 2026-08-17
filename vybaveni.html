@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vybavení | Viktor Hajduk</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="gear-page">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index" class="logo">Viktor Hajduk</a>
+            <ul class="nav-menu">
+                <li class="nav-dropdown">
+                    <details class="dropdown">
+                        <summary class="nav-link nav-dropdown-toggle">Co dělám</summary>
+                        <ul class="dropdown-menu">
+                            <li><a href="co_delam/kamery" class="dropdown-link">Kamerové systémy</a></li>
+                            <li><a href="co_delam/stavbapc" class="dropdown-link">Stavba PC</a></li>
+                            <li><a href="co_delam/site" class="dropdown-link">Sítě</a></li>
+                            <li><a href="co_delam/3dtisk" class="dropdown-link">3D tisk</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="vybaveni" class="nav-link">Vybavení</a></li>
+                <li><a href="kontakt" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Vybavení</h1>
+                <p>Základní přehled toho, co používám</p>
+            </div>
+
+            <div class="container">
+                <h2 style="margin-top: 40px; margin-bottom: -20px;">Aktuální hardware</h2>
+                <div class="work-grid">
+                    <article class="work-card pc-card">
+                        <h2>Stolní počítač</h2>
+                        <h3 style="margin-bottom: 10px;">Hlavní pracovní stroj na práci a hraní</h3>
+                        <p><b>Procesor:</b> AMD Ryzen 5 3600</p>
+                        <p><b>GPU:</b> NVIDIA GeForce RTX 4060</p>
+                        <p><b>Chladič:</b> Endorfy Fera 5</p>
+                        <p><b>RAM:</b> 32 GB DDR4</p>
+                        <p><b>SSD:</b> 1 TB NVMe (PCIe 4.0)</p>
+                        <p><b>SSD 2:</b> 512 GB NVMe (PCIe 3.0)</p>
+                        <p><b>HDD:</b> 4 TB HDD</p>
+                        <p><b>Zdroj:</b> Seasonic Core GC-650 80 PLUS Gold</p>
+                        <p><b>Skříň:</b> SilentiumPC Regnum RG1W</p>
+                    </article>
+
+                    <article class="work-card pc-card">
+                        <h2>Notebook</h2>
+                        <h3 style="margin-bottom: 10px;">Na diagnostiku, školu a jako pracovní stroj na cestách</h3>
+                        <p><b>Model:</b> HP Eliteboo x360 830 G8</p>
+                        <p><b>Procesor:</b> Intel Core i5-1145G7</p>
+                        <p><b>iGPU:</b> Intel Iris Xe Graphics</p>
+                        <p><b>RAM:</b> 16 GB DDR4</p>
+                        <p><b>SSD:</b> 256 GB NVMe</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="currentYear"></span> Viktor Hajduk</p>
+    </footer>
+
+    <script>
+        const currentYear = document.getElementById('currentYear');
+        if (currentYear) {
+            currentYear.textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>
