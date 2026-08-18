@@ -73,11 +73,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.7rem 1.5rem;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -91,7 +91,7 @@ body {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.2rem;
     align-items: center;
     margin-left: auto;
 }
@@ -187,8 +187,9 @@ body {
     text-decoration: none;
     font-weight: 500;
     transition: opacity 0.3s ease;
-    padding: 0.5rem 1rem;
+    padding: 0.35rem 0.75rem;
     border-radius: 4px;
+    font-size: 0.95rem;
 }
 
 .nav-link:hover {
